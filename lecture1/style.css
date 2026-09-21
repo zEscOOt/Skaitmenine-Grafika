@@ -1,0 +1,30 @@
+:root {
+	--double-size: 480px;
+	--normal-size: calc(var(--double-size) / 2);
+}
+
+table {
+	border: 0px solid black;
+	border-collapse: collapse;
+	aspect-ratio: 1;
+	line-height: 0;
+}
+
+tr, td, img {
+	padding: 0;
+}
+
+.horizontal {
+	width: var(--double-size);
+	height: var(--normal-size);
+}
+
+.vertical {
+	width: var(--normal-size);
+	height: var(--double-size);
+}
+
+.centre {
+	width: var(--normal-size);
+	height: var(--normal-size);
+}
