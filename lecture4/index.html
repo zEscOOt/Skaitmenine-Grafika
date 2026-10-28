@@ -53,7 +53,7 @@
                 <tr>
                     <th scope="row">1</th>
                     <td>Laptop</td>
-                    <td>Renegade 4 <span class="badge text-bg-primary">New</span></td>
+                    <td>Renegade 4 <span class="badge text-bg-info">New</span></td>
                     <td>1199€</td>
                 </tr>
             </tbody>
@@ -93,13 +93,13 @@
                     aria-label="Slide 3"></button>
             </div>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="5000">
                     <img src="./img/laptop.webp" class="d-block w-100 img-fluid" alt="...">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="5000">
                     <img src="./img/phone.jpeg" class="d-block w-100 img-fluid" alt="...">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="5000">
                     <img src="./img/headphone.webp" class="d-block w-100 img-fluid" alt="...">
                 </div>
             </div>
@@ -113,6 +113,25 @@
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
             </button>
+        </div>
+        <!-- paragrapth -->
+        <div class="container-fluid my-5">
+            <h1 class="my-1">Banh - Inovating the future.</h1>
+            <p>Labore mollit veniam culpa <mark>commodo</mark> ad veniam veniam cillum sit. Exercitation anim veniam
+                reprehenderit duis. Pariatur dolor anim cillum nulla incididunt est ut proident. Deserunt duis Lorem
+                officia sint deserunt minim dolore aute voluptate. Ullamco do mollit proident ex aliquip proident
+                deserunt in.
+
+                Officia <s>irure</s> amet pariatur cillum aute reprehenderit <de>duis</de> enim labore quis dolor magna.
+                Eiusmod et eiusmod laboris est Lorem sunt culpa do. <strong> Pariatur consequat incididunt dolore
+                    adipisicing</strong> eu irure id amet cupidatat voluptate deserunt.
+
+                Sit Lorem deserunt irure ea incididunt veniam commodo <u>sit ad commodo anim incididunt.</u> Nisi
+                reprehenderit ullamco consectetur ea. Exercitation non cillum nulla ut nulla commodo exercitation
+                officia est aliqua cupidatat. Pariatur incididunt laborum voluptate nisi Lorem id aute non.
+
+                In cillum ad commodo enim. Elit enim consectetur in in ea amet ullamco dolor ad et. <em>Duis aute ipsum
+                    adipisicing nisi sunt</em> consequat commodo est id incididunt eu.</p>
         </div>
         <!-- form -->
         <div class="input-group mb-3">
@@ -146,7 +165,25 @@
                 <a href="#">Privacy Policy</a>
             </label>
         </div>
-        <button type="button" class="btn btn-primary my-3 float-end">Submit</button>
+        <button type="button" class="btn btn-primary my-3 float-end" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+        <!-- submit modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel">Are you sure?</h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        This cannont be reseversed
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <div class="container cold-md-auto"></div>
     <!-- pagination -->
@@ -196,14 +233,10 @@
         <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
             <p>© 2025 Company, Inc. All rights reserved.</p>
             <ul class="list-unstyled d-flex">
-                <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi"
-                            width="24" height="24">
-                            <use xlink:href="#instagram"></use>
-                        </svg></a></li>
-                <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24"
-                            height="24" aria-hidden="true">
-                            <use xlink:href="#facebook"></use>
-                        </svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Instagram"><svg class="bi" width="24" height="24">
+                    <use xlink:href="#instagram"></use></svg></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="#" aria-label="Facebook"><svg class="bi" width="24" height="24" aria-hidden="true">
+                    <use xlink:href="#facebook"></use></svg></a></li>
             </ul>
         </div>
     </footer>
